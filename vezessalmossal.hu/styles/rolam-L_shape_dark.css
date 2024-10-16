@@ -1,0 +1,50 @@
+body {
+    background-color: #385D67;
+}
+
+.navbar {
+    background-color: #000;
+    color: #4A9BB1;
+}
+
+.nav-link {
+    text-shadow: -1px 1px 20px #b8b8b8
+}
+
+.wrapper {
+    margin-top: 50px
+}
+
+#bg {
+    position: absolute;
+    z-index: -100;
+}
+
+p img {
+    width: 500px;
+    margin: 40px 30px 0 20px;
+    margin-left: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+
+}
+
+p {
+    margin: 0 70px;
+    background-color: #637276;
+    color: #fff;
+    font-size: 20px;
+    z-index: 100;
+    text-align: justify;
+    border: 3px solid #13404C;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+
+    padding: 20px;
+    border-radius: 30px;
+    overflow: hidden;
+
+}
+
+p span {
+    font-size: 24px;
+}

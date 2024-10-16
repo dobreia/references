@@ -1,0 +1,134 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 55px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.card {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 12px;
+    background-color: #F2F3F5;
+    box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    /* Több sorba törhetnek az elemek */
+    justify-content: flex-start;
+    /* Balra igazítás, amikor több elem van */
+}
+
+
+
+.row > .col-12:last-child {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    /* Középre igazítja az utolsó elemet, ha egyedül van a sorban */
+}
+
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.left p {
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+}
+
+.rating img {
+    width: 20px;
+    margin-right: -5px;
+}
+
+.fb {
+    width: 25px;
+    margin-bottom: 24px;
+}
+
+.fb-tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.fb-tooltip .fb-tooltip-text {
+    visibility: hidden;
+    /* Maximum szélesség megadása, hogy ne legyen túl széles */
+    width: 272px;
+    /* Az alapértelmezett szélesség automatikusan igazodik */
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    /* Tooltip az ikon fölött */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.fb-tooltip:hover .fb-tooltip-text,
+.fb-tooltip-text:hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+.fb-tooltip .fb-tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    /* Nyíl a tooltip alján */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+/* Bal oldalra igazítás */
+.left-tooltip .fb-tooltip-text {
+    left: auto;
+    right: 0;
+    transform: none;
+    /* Elhelyezés balra */
+}
+
+.left-tooltip .fb-tooltip-text::after {
+    left: auto;
+    right: 2%;
+    /* A nyíl a balra igazított tooltiphez igazodik */
+    transform: none;
+    /* A nyíl nem tolódik el balra igazításkor */
+}
+
+
+
+.text {
+    margin-top: 10px;
+}

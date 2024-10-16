@@ -1,0 +1,102 @@
+body {
+    background-color: #385D67;
+}
+
+.navbar {
+    background-color: #000;
+    color: #4A9BB1;
+}
+
+.nav-link {
+    text-shadow: -1px 1px 20px #b8b8b8
+}
+
+#bg {
+    position: absolute;
+    z-index: -100;
+}
+
+
+.container {
+    width: 1000px;
+    margin-top: 50px;
+    padding: 19px;
+    background-color: #637276;
+    border-radius: 20px;
+    border: 3px solid #13404C;
+    box-shadow: 0 0 10px 0 #2A464D;
+    overflow: hidden;
+}
+
+p {
+    margin: 0;
+    display: block;
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    filter: drop-shadow(0 0 1px black);
+}
+
+#img {
+    width: 500px;
+    margin-left: 30px;
+    border-radius: 10px;
+    float: right;
+    box-shadow: 0 0 10px 2px #2A464D;
+}
+
+p span {
+    font-size: 24px;
+}
+
+@media(min-width:1600px) {
+    .container {
+        margin-top: 75px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 992px) {
+    #img {
+        width: 370px;
+        margin-left: 20px;
+
+    }
+}
+
+@media (max-width: 768px) {
+    #img {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+        float: none;
+    }
+
+    p span {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        margin-bottom: -30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media(max-width: 412px) {
+    .container {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 95%;
+    }
+}

@@ -1,0 +1,129 @@
+body {
+    background-color: #FFF5DB;
+    font-family: Urbanist, sans-serif;
+}
+
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.language {
+    color: #2A6372;
+    font-size: 20px;
+}
+
+.language-active {
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: #AFB9BB;
+}
+
+.navbar-toggler {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.navbar-toggler-icon {
+    width: 40px;
+    height: auto;
+}
+
+.logo {
+    width: 200px;
+}
+
+.active {
+    background-color: #2A6372;
+    color: #fff !important;
+    border-radius: 50px;
+    transition: all ease 1ms;
+}
+
+.nav-link {
+    padding: 10px 15px 10px 15px !important;
+    margin: 0 5px;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #2A6372;
+    transition: all ease 1ms;
+}
+
+
+.nav-link:hover {
+    background-color: #2A6372;
+    color: #fff;
+    border-radius: 50px;
+    transition: all ease 0.5ms;
+}
+
+.nav-link:active {
+    background-color: #2a6472cb;
+
+}
+
+.theme {
+    width: 40px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.theme:hover {
+    filter: drop-shadow(0 0 10px #518795);
+}
+
+
+@media (min-width:992px) {
+    #navbarNav {
+        display: flex;
+        justify-content: end;
+    }
+
+    .theme.big,
+    .language.big {
+        display: none;
+    }
+
+
+
+
+}
+
+@media (max-width:992px) {
+    .theme {
+        margin-right: 5px;
+    }
+
+    .theme.small,
+    .language.small {
+        display: none;
+    }
+
+    .language {
+        margin-right: 5px;
+    }
+
+
+}
+
+@media (max-width:415px) {
+
+    #theme-icon,
+    .navbar-toggler-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .language {
+        margin-right: 3px;
+        font-size: 16px;
+    }
+}

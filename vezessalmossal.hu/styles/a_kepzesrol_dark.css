@@ -1,0 +1,245 @@
+body {
+    background-color: #385D67;
+}
+
+.navbar {
+    background-color: #000;
+    color: #4A9BB1;
+}
+
+.nav-link {
+    text-shadow: -1px 1px 20px #b8b8b8
+}
+
+h1 {
+    color: white;
+
+}
+p, li, h4, h1{
+    filter: drop-shadow(0 0 1px black);
+}
+
+.card-title {
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 18px;
+    background-color: #637276;
+    color: #fff;
+    text-align: justify;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.45);
+}
+
+.card-course {
+    position: relative;
+    z-index: 100;
+    margin: 0px 60px 10px 60px;
+    padding: 30px 20px 20px 20px;
+    background-color: #637276;
+    color: #fff;
+    border: #13404C solid 6px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.25);
+    line-height: 40px;
+
+}
+
+.course-title-bg {
+    width: 270px;
+    height: 65px;
+    margin-top: 40px;
+    margin-bottom: -20px;
+    margin-left: 80px;
+
+}
+
+.course-title {
+    position: relative;
+    margin-top: 45px;
+    margin-bottom: -86px;
+    margin-left: 125px;
+    font-size: 20px;
+    color: #fff;
+}
+
+
+
+.card-course ul {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    list-style: none;
+}
+
+.card-course ul li {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 30px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.card-course ul li img {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    position: absolute;
+    left: 0;
+    top: 8px;
+    filter: brightness(0) invert(1) sepia(0) saturate(10000%) hue-rotate(0deg);
+}
+
+
+.card-course p {
+    font-size: 20px;
+    margin-left: 100px
+}
+
+.price {
+    font-weight: bold;
+    margin-left: 50px !important;
+}
+
+.price .old-price {
+    text-decoration: line-through;
+}
+
+.price .new-price {
+    font-weight: bold;
+}
+
+
+@media (max-width: 1400px) {
+    .card-course ul {
+        font-size: 18px;
+    }
+
+    .card-course ul li {
+        margin-left: 15px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .card-course.right {
+        margin-right: 0;
+        margin-left: 30px;
+    }
+
+    .card-course.left {
+        margin-left: 0;
+        margin-right: 30px;
+    }
+
+    .card-course {
+        padding: 20px;
+    }
+
+    .course-title-bg.left {
+        margin-left: 20px;
+    }
+
+    .course-title.left {
+        margin-left: 65px
+    }
+
+    .course-title-bg.right {
+        margin-left: 50px;
+    }
+
+    .course-title.right {
+        margin-left: 90px
+    }
+}
+
+@media (max-width:992px) {
+
+    .card-course {
+        padding: 20px;
+    }
+
+    .card-course.right {
+        margin-left: -2px;
+    }
+
+    .card-course.left {
+        margin-right: -2px;
+    }
+
+    .card-course ul,
+    .card-course p,
+    .card-title {
+        font-size: 16px;
+    }
+
+    .card-course ul li {
+        margin-left: 0;
+    }
+
+}
+
+@media(max-width: 800px) {
+
+    .card-course ul,
+    .card-course p,
+    .card-title {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .card-course,
+    .card-course.left,
+    .card-course.right {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .card-course.right {
+        margin-bottom: 50px;
+    }
+
+
+
+    .card-course ul,
+    .card-course p,
+    .card-title {
+        font-size: 16px;
+    }
+
+    .course-title-bg.right {
+        margin-left: 20px;
+    }
+
+    .course-title.right {
+        margin-left: 60px
+    }
+
+    .wrapper {
+        margin: 0 auto;
+        width: 97%;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+    .wrapper {
+        width: 95%;
+    }
+}
+
+@media(max-width: 390px) {
+    .course-title-bg {
+        margin-bottom: -25px;
+        margin-left: 30px !important;
+        width: 200px;
+    }
+
+    .course-title {
+        margin: 45px 0 -83px 58px !important;
+        font-size: 16px;
+    }
+}
